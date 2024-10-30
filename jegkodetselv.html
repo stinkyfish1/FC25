@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnering Påmelding</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">Turnering Påmelding</h1>
+            <p>Registrer dine spillere og se hvilke skoler som er påmeldt</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10">
+        <!-- Påmeldingsskjema -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-10">
+            <h2 class="text-2xl font-semibold mb-4">Påmeldingsskjema</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="school-name" class="block text-sm font-medium text-gray-700">Skolens Navn</label>
+                    <input type="text" id="school-name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-medium">Spiller 1</h3>
+                    <label for="player1-name" class="block text-sm font-medium text-gray-700">Navn</label>
+                    <input type="text" id="player1-name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="player1-image" class="block text-sm font-medium text-gray-700">Bilde-URL</label>
+                    <input type="url" id="player1-image" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-lg font-medium">Spiller 2</h3>
+                    <label for="player2-name" class="block text-sm font-medium text-gray-700">Navn</label>
+                    <input type="text" id="player2-name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="player2-image" class="block text-sm font-medium text-gray-700">Bilde-URL</label>
+                    <input type="url" id="player2-image" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">Send Påmelding</button>
+            </form>
+        </section>
+
+        <!-- Spillerprofiler -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-10">
+            <h2 class="text-2xl font-semibold mb-4">Spillerprofiler</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Spiller 1 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <img src="https://via.placeholder.com/150" alt="Spiller 1" class="rounded-full mb-2">
+                    <h3 class="text-xl font-bold">Spiller 1 Navn</h3>
+                    <p>Skole: Skole A</p>
+                    <p>Favorittspill: Spill 1</p>
+                    <p>Erfaring: 3 år</p>
+                </div>
+                <!-- Spiller 2 -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <img src="https://via.placeholder.com/150" alt="Spiller 2" class="rounded-full mb-2">
+                    <h3 class="text-xl font-bold">Spiller 2 Navn</h3>
+                    <p>Skole: Skole A</p>
+                    <p>Favorittspill: Spill 2</p>
+                    <p>Erfaring: 2 år</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamisk oversikt -->
+        <section class="bg-white shadow-md rounded-lg p-6 mb-10">
+            <h2 class="text-2xl font-semibold mb-4">Dynamisk Oversikt over Påmeldte Skoler</h2>
+            <ul class="list-disc list-inside">
+                <li>Skole A - Påmeldt</li>
+                <li>Skole B - Ikke påmeldt</li>
+                <li>Skole C - Påmeldt</li>
+                <li>Skole D - Ikke påmeldt</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Turnering. Alle rettigheter forbeholdt.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
